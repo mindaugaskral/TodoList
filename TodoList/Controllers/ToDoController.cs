@@ -30,7 +30,7 @@ namespace TodoList.Controllers
         }
         
         [HttpPost]
-        public IActionResult action(Todo todo)
+        public IActionResult Add(Todo todo)
         {
             _todosService.Add(todo);
             return RedirectToAction("Index");

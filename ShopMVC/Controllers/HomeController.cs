@@ -1,24 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ShopMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using TodoList.Models;
-using TodoList.Services;
 
-namespace TodoList.Controllers
+namespace ShopMVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly TodosService _todosService;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _todosService = new TodosService();
         }
 
         public IActionResult Index()
