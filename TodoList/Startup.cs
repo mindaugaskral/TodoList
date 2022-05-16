@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TodoList.Services;
 
 namespace TodoList
 {
@@ -24,6 +25,7 @@ namespace TodoList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSingleton<TodosService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
