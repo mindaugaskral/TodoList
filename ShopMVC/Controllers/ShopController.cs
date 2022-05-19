@@ -39,5 +39,18 @@ namespace ShopMVC.Controllers
             _shopService.Delete(name);
             return RedirectToAction("Index");
         }
+        public IActionResult Edit(string name)
+        {
+            var item = _shopService.Get(name);
+            return View(item);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(ShopItem item)
+        {
+            _shopService.Delete(item.Name);
+            _shopService.Add(item);
+            return RedirectToAction("Index");
+        }
     }
 }

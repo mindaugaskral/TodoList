@@ -23,6 +23,10 @@ namespace ShopMVC.Services
         {
             return _shopItems;
         }
+        public ShopItem Get(string name)
+        {
+            return _shopItems.FirstOrDefault(x => x.Name == name);
+        }
         public void Add(ShopItem item)
         {
             _shopItems.Add(item);
@@ -30,6 +34,11 @@ namespace ShopMVC.Services
         public void Delete(string name)
         {
             _shopItems = _shopItems.Where(x => x.Name != name).ToList();
+        }
+        public ShopItem Edit(string name)
+        {
+            var item = _shopItems.FirstOrDefault(x => x.Name == name);
+            return item;
         }
     }
 }

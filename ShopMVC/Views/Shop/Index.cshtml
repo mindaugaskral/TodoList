@@ -1,6 +1,6 @@
 ﻿@model List<ShopItem>
 
-    <table class="table">
+ <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -20,6 +20,7 @@
           <td>@item.ShopName</td>
           <td>@item.ExpiryDate</td>
           <td>@Html.ActionLink("Remove", "Delete", "Shop", new { Name = @item.Name})</td>
+          <td>@Html.ActionLink("Edit", "Edit", "Shop", new { Name = @item.Name})</td>
         </tr>
         }
     

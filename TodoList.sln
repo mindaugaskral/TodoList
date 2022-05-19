@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoList.csproj", "{B9BD7439-B4C8-4259-831B-48A1CEF9E7F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList", "TodoList\TodoList.csproj", "{B9BD7439-B4C8-4259-831B-48A1CEF9E7F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMVC", "ShopMVC\ShopMVC.csproj", "{349D2FB3-7567-4869-92B0-4D8E5BE96A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMVC", "ShopMVC\ShopMVC.csproj", "{349D2FB3-7567-4869-92B0-4D8E5BE96A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoSql", "TodoSql\TodoSql.csproj", "{B09C96A0-4D15-4B36-ADEB-A79E8A0081D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{349D2FB3-7567-4869-92B0-4D8E5BE96A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349D2FB3-7567-4869-92B0-4D8E5BE96A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349D2FB3-7567-4869-92B0-4D8E5BE96A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09C96A0-4D15-4B36-ADEB-A79E8A0081D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09C96A0-4D15-4B36-ADEB-A79E8A0081D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09C96A0-4D15-4B36-ADEB-A79E8A0081D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09C96A0-4D15-4B36-ADEB-A79E8A0081D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
